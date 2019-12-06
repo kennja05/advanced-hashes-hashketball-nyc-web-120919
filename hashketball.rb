@@ -158,7 +158,19 @@ end
 end     
 end   
 end 
-charlotte_points = 
+charlotte_points = game_hash.each do |home_away, team_info|
+  if home_away == :away 
+    team_info.each do |players, stats| 
+      if players == :players
+        stats.each do |athlete|
+          away_points += athlete[:points]
+end
+end
+end
+end
+end
+binding.pry 
+
 
 end 
 
