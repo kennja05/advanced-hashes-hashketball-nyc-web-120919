@@ -151,7 +151,7 @@ brooklyn_points = game_hash.each do |home_away, team_info|
     team_info.each do |players, stats| 
       if players == :players
         stats.each do |athlete|
-          athlete[:points] += home_points 
+          home_points += athlete[:points] 
       binding.pry
 end       
 end       
