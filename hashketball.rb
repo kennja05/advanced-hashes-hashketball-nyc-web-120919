@@ -170,7 +170,11 @@ end
 end
 end
 binding.pry 
-
+if home_points > away_points
+  return "Brookyn Nets"
+else 
+  return "Charlotte Hornets"
+end   
 
 end 
 
