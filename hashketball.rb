@@ -144,11 +144,14 @@ def most_points_scored
 end  
  
 def winning_team
+home_points = 0 
+away_points = 0 
 brooklyn_points = game_hash.each do |home_away, team_info|
   if home_away == :home 
     team_info.each do |players, stats| 
       if players == :players
         stats.each do |athlete|
+          athlete[:points] += home_points 
       binding.pry
 end       
 end       
