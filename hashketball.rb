@@ -169,7 +169,7 @@ end
 end
 end
 end
-binding.pry 
+#binding.pry 
 if home_points > away_points
   return "Brookyn Nets"
 else 
